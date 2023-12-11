@@ -1,6 +1,9 @@
+using Microsoft.AspNetCore.Identity;
+
 namespace API.Entities
 {
-    public class User
+    public class User : IdentityUser
+    //TODO: Chnage this class to what we need
     {
         public int Id { get; set; } // PK
         public int RoomNumber { get; set; }  
